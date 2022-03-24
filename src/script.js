@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     let count = 0;
 
     let slide = {
-        slideSuivante : () => {
+        slideSuivante(){
             items[count].classList.remove('active');
     
             if(count < nbSlide - 1){
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             }
     
             items[count].classList.add('active')
-            console.log(count);
+            // console.log(count);
             
         },
         slidePrecedente(){
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             // console.log(count);
             
         },
-        keyPress : (e) => {
+        keyPress(e){
             console.log(e);
             
             if(e.keyCode === 37){
